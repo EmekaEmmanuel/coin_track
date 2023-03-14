@@ -7,7 +7,6 @@ import Track from '../Components/Track';
 
 function HomePage() {
   const myCoins = useSelector((state) => state.coin.coins);
-  // console.log(myCoins);
   const dispatch = useDispatch();
 
   useEffect(() => {

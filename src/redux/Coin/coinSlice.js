@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const getCoinsURL = 'https://api.coinstats.app/public/v1/coins';
+const getCoinsURL = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=5';
 
 const initialState = {
   loading: false,
@@ -38,5 +38,3 @@ const coinSlice = createSlice({
 /* eslint-disable no-param-reassign */
 
 export default coinSlice.reducer;
-
-// export const { bookRocket, unreserveRocket } = rocketSlice.actions;

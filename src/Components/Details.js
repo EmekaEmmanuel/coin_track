@@ -8,7 +8,6 @@ function Details(props) {
   const { id } = useParams();
 
   const coin = (myCoins.filter((coin) => coin.id === id))[0];
-  console.log(coin);
 
   return (
     <div className="app_container">

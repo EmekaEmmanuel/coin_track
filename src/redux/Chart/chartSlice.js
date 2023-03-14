@@ -1,8 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// const getChartsURL = 'https://api.coinstats.app/public/v1/charts?period=1m&coinId=ethereum';
-
 const initialState = {
   loading: false,
   charts: [],
@@ -10,7 +8,7 @@ const initialState = {
 };
 
 export const fetchCharts = createAsyncThunk('market/fetchMarkets', async (id) => {
-  const { data } = await (axios.get(`https://api.coinstats.app/public/v1/charts?period=24h&coinId=${id}`));
+  const { data } = await (axios.get(`https://api.coinstats.app/public/v1/charts?period=1m&coinId=${id}`));
   return data;
 });
 
@@ -38,5 +36,3 @@ const chartSlice = createSlice({
 /* eslint-disable no-param-reassign */
 
 export default chartSlice.reducer;
-
-// export const { bookRocket, unreserveRocket } = rocketSlice.actions;

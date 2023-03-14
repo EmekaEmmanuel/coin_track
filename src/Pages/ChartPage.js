@@ -10,7 +10,6 @@ function ChartPage() {
   const myCharts = useSelector((state) => state.chart.charts);
   const dispatch = useDispatch();
   const { id } = useParams();
-  console.log(myCharts);
 
   useEffect(() => {
     let active = true;
