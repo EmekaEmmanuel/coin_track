@@ -21,7 +21,7 @@ function ChartPage() {
     return () => {
       active = false;
     };
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   return (
     <div className="app_container">

@@ -1,13 +1,10 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import '../css/Details.css';
 
 function Details(props) {
-  const { myCoins } = props;
-  const { id } = useParams();
-
-  const coin = (myCoins.filter((coin) => coin.id === id))[0];
+  const { coin } = props;
 
   return (
     <div className="app_container">
@@ -16,9 +13,11 @@ function Details(props) {
         <section className="details_section1">
           <p className="details_font1">LIVE MARKET CHANGES</p>
           <h1 className="details_font2">
-            Get real time details on
+            Get real time
             {' '}
-            {coin.name}
+            {coin ? coin.name : ''}
+            {' '}
+            details
           </h1>
           <p className="details_font3">Your favorite place to see what&#39;s new.</p>
         </section>
@@ -106,7 +105,7 @@ function Details(props) {
 }
 
 Details.propTypes = {
-  myCoins: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.object)).isRequired,
+  coin: PropTypes.objectOf(PropTypes.objectOf(PropTypes.any)).isRequired,
 };
 
 export default Details;

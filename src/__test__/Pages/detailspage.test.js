@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import store from '../../redux/store';
 import DetailsPage from '../../Pages/DetailsPage';
 
-it('RoCoin Details page renders correctly', () => {
+it('Details page renders correctly', () => {
   const myCoins = store.getState().coin.coins;
   const tree = renderer.create(
     <Provider store={store}>

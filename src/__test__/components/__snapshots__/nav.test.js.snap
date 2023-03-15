@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component renders correctly 1`] = `
+<div
+  className="app_container"
+>
+  <header
+    className="home_header_box header_line"
+  >
+    <div
+      className="home_header "
+    >
+      <div
+        className="logo_box"
+      >
+        <figure>
+          <img
+            alt=""
+            className="logo_img"
+            src="crypto_image.png"
+          />
+        </figure>
+        <h2
+          className="nav_font1"
+        >
+          monie track
+        </h2>
+      </div>
+      <nav
+        className="nav_tag"
+      >
+        <li
+          className="active nav_item"
+        >
+          <a
+            activeClassName="active"
+            aria-current="page"
+            className="nav_font2 td_none active"
+            href="/"
+            onClick={[Function]}
+          >
+            Track 
+          </a>
+        </li>
+        <li
+          className="active nav_item"
+        >
+          <a
+            activeClassName="active"
+            aria-current="page"
+            className="nav_font2 td_none active"
+            href="/"
+            onClick={[Function]}
+          >
+            Happenings 
+          </a>
+        </li>
+        <li
+          className="active nav_item"
+        >
+          <a
+            activeClassName="active"
+            className="nav_font2 td_none"
+            href="/ChartPage"
+            onClick={[Function]}
+          >
+            Chart 
+          </a>
+        </li>
+      </nav>
+      <div
+        className="notify_box"
+      >
+        <button
+          type="button"
+        >
+           
+          <img
+            alt=""
+            src="closepopup.png"
+          />
+        </button>
+        <button
+          type="button"
+        >
+           
+          <img
+            alt=""
+            src="closepopup.png"
+          />
+        </button>
+      </div>
+      <div
+        className="hamburger_container"
+      >
+        <figure>
+          <img
+            alt="Hamburger_menu"
+            src="hamburger.png"
+          />
+        </figure>
+      </div>
+    </div>
+  </header>
+</div>
+`;

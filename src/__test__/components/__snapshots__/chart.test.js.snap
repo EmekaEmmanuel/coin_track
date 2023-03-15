@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart component renders correctly 1`] = `
+<div
+  className="app_container"
+>
+  <main
+    className="chart_main_tag"
+  >
+    <section
+      className="chart_section1"
+    >
+      <p
+        className="chart_font1"
+      >
+        LIVE MARKET CHANGES
+      </p>
+      <h1
+        className="chart_font2"
+      >
+        Get an Overview on the Live chart
+      </h1>
+      <p
+        className="chart_font3"
+      >
+        Your favorite place to see moment changes.
+      </p>
+    </section>
+    <section
+      className="chart_section2"
+    >
+      <article
+        className="chart_article"
+      >
+        <h3
+          className="chart_font4"
+        >
+          Live chart
+        </h3>
+        <div>
+          <canvas
+            height={400}
+            role="img"
+            width={300}
+          />
+        </div>
+        <div
+          className="button_box"
+        >
+          <button
+            className="chart_section3_btn"
+            type="button"
+          >
+            1 month
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+</div>
+`;

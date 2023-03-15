@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component renders correctly 1`] = `
+<div
+  className="app_container"
+>
+  <main
+    className="main_tag"
+  >
+    <section
+      className="details_section1"
+    >
+      <p
+        className="details_font1"
+      >
+        LIVE MARKET CHANGES
+      </p>
+      <h1
+        className="details_font2"
+      >
+        Get real time
+         
+         
+        details
+      </h1>
+      <p
+        className="details_font3"
+      >
+        Your favorite place to see what's new.
+      </p>
+    </section>
+  </main>
+</div>
+`;
