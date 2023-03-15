@@ -1,31 +1,19 @@
 import axios from 'axios';
 import store from '../../redux/store';
-import { fetchMission, joinMission, leaveMission } from '../../redux/mission/missionSlice';
+import { fetchMarkets } from '../../redux/Market/marketSlice';
 
-describe('Mission redux state tests', () => {
-  it('Should initially set Mission store to an empty Array', () => {
-    const state = store.getState().mission.missions;
+describe('Market redux state tests', () => {
+  it('Should initially set Market store to an empty Array', () => {
+    const state = store.getState().market.markets;
     expect(state).toEqual([]);
   });
 
-  it('should Join Mission payload send correct', () => {
-    const expectedPayload = { payload: '9D1B7E0', type: 'mission/joinMission' };
-    const actualPayload = joinMission('9D1B7E0');
-    expect(actualPayload).toEqual(expectedPayload);
-  });
-
-  it('should Leave Mission payload send correct', () => {
-    const expectedPayload = { payload: '9D1B7E0', type: 'mission/leaveMission' };
-    const actualPayload = leaveMission('9D1B7E0');
-    expect(actualPayload).toEqual(expectedPayload);
-  });
-
-  it('fetches data from API', async () => {
-    const url = 'https://api.spacexdata.com/v3/missions';
+  it('fetches market data from API', async () => {
+    const url = 'https://api.coinstats.app/public/v1/markets?coinId=bitcoin';
     const axiosSpy = jest.spyOn(axios, 'get');
     jest.setTimeout(90000);
     const dispatchSpy = jest.fn();
-    await fetchMission(url)(dispatchSpy);
+    await fetchMarkets(url)(dispatchSpy);
     expect(axiosSpy).toHaveBeenCalledWith(url);
   });
 });

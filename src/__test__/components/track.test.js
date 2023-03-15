@@ -3,14 +3,14 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import store from '../../redux/store';
-import Rocket from '../../components/Rocket';
+import Track from '../../Components/Track';
 
-it('Rocket component renders correctly', () => {
-  const myRockets = store.getState().rocket.rockets;
+it('Track component renders correctly', () => {
+  const myCoins = store.getState().coin.coins;
   const tree = renderer.create(
     <Provider store={store}>
       <MemoryRouter>
-        <Rocket myRockets={myRockets} />
+        <Track myCoins={myCoins} />
       </MemoryRouter>
     </Provider>,
   ).toJSON();

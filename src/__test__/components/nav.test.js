@@ -1,7 +1,7 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import Nav from '../../components/Nav';
+import Nav from '../../Components/Nav';
 
 it('Navigation component renders correctly', () => {
   const tree = renderer

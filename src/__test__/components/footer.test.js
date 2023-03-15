@@ -3,14 +3,13 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import store from '../../redux/store';
-import Rocket from '../../components/Rocket';
+import Footer from '../../Components/Footer';
 
-it('Rocket component renders correctly', () => {
-  const myRockets = store.getState().rocket.rockets;
+it('Footer component renders correctly', () => {
   const tree = renderer.create(
     <Provider store={store}>
       <MemoryRouter>
-        <Rocket myRockets={myRockets} />
+        <Footer />
       </MemoryRouter>
     </Provider>,
   ).toJSON();

@@ -3,14 +3,14 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import store from '../../redux/store';
-import RocketPage from '../../Pages/RocketPage';
+import MarketPage from '../../Pages/MarketPage';
 
-it('Rocket page renders correctly', () => {
-  const myRockets = store.getState().rocket.rockets;
+it('Market page renders correctly', () => {
+  const myMarkets = store.getState().market.markets;
   const tree = renderer.create(
     <Provider store={store}>
       <MemoryRouter>
-        <RocketPage myRockets={myRockets} />
+        <MarketPage myMarkets={myMarkets} />
       </MemoryRouter>
     </Provider>,
   ).toJSON();

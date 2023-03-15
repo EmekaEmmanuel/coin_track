@@ -3,14 +3,14 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import store from '../../redux/store';
-import Rocket from '../../components/Rocket';
+import Chart from '../../Components/Chart';
 
-it('Rocket component renders correctly', () => {
-  const myRockets = store.getState().rocket.rockets;
+it('Chart component renders correctly', () => {
+  const myCharts = store.getState().chart.charts;
   const tree = renderer.create(
     <Provider store={store}>
       <MemoryRouter>
-        <Rocket myRockets={myRockets} />
+        <Chart myCharts={myCharts} />
       </MemoryRouter>
     </Provider>,
   ).toJSON();
