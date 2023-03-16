@@ -57,7 +57,7 @@
   gap: 15px;
 }
 
-.notify_box img{
+.notify_box img {
   width: 18px;
   height: 18px;
   object-fit: contain;
@@ -118,7 +118,7 @@
     gap: 95px;
   }
 
-  .disp_none{
+  .disp_none {
     display: none;
   }
 }
