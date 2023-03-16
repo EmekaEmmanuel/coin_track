@@ -85,7 +85,7 @@
   transition: 1s;
 }
 
-.market_article:hover {
+.coin_article:hover {
   transform: scale(1.05);
 }
 

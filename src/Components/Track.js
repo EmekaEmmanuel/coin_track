@@ -32,30 +32,35 @@ function Track(props) {
         <section className="home_section3">
 
           {filteredCoins.map((coin) => (
-            <article className="coin_article" key={coin.name}>
+            <div key={coin.name}>
               <Link to={`/details/${coin.id}`} className="td_none">
-                <figure className="coin_figure">
-                  <img className="coin_img" src={coin.icon} alt="" />
-                </figure>
-                <div className="home_coin_details">
-                  <ul className="coin_details_box">
-                    <li className="coin_details_item">
-                      Rank:
-                      {coin.rank}
-                    </li>
-                    <li className="coin_details_item">{coin.name}</li>
-                    <li className="coin_details_item">{coin.symbol}</li>
-                    <li className="coin_details_item">
-                      $
-                      {coin.price.toFixed(2)}
-                    </li>
-                    <button type="button" className="home_section3_btn">
-                      <Link to={`/details/${coin.id}`} className="td_none">Track</Link>
-                    </button>
-                  </ul>
-                </div>
+                <article className="coin_article">
+
+                  <figure className="coin_figure">
+                    <img className="coin_img" src={coin.icon} alt="" />
+                  </figure>
+                  <div className="home_coin_details">
+                    <ul className="coin_details_box">
+                      <li className="coin_details_item">
+                        Rank:
+                        {coin.rank}
+                      </li>
+                      <li className="coin_details_item">{coin.name}</li>
+                      <li className="coin_details_item">{coin.symbol}</li>
+                      <li className="coin_details_item">
+                        $
+                        {coin.price.toFixed(2)}
+                      </li>
+                      <button type="button" className="home_section3_btn">
+                        <Link to={`/details/${coin.id}`} className="td_none">Track</Link>
+                      </button>
+                    </ul>
+                  </div>
+
+                </article>
               </Link>
-            </article>
+            </div>
+
           ))}
         </section>
 
