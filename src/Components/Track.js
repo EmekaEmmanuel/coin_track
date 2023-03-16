@@ -33,26 +33,28 @@ function Track(props) {
 
           {filteredCoins.map((coin) => (
             <article className="coin_article" key={coin.name}>
-              <figure className="coin_figure">
-                <img className="coin_img" src={coin.icon} alt="" />
-              </figure>
-              <div className="home_coin_details">
-                <ul className="coin_details_box">
-                  <li className="coin_details_item">
-                    Rank:
-                    {coin.rank}
-                  </li>
-                  <li className="coin_details_item">{coin.name}</li>
-                  <li className="coin_details_item">{coin.symbol}</li>
-                  <li className="coin_details_item">
-                    $
-                    {coin.price.toFixed(2)}
-                  </li>
-                  <button type="button" className="home_section3_btn">
-                    <Link to={`/details/${coin.id}`} className="td_none">Track</Link>
-                  </button>
-                </ul>
-              </div>
+              <Link to={`/details/${coin.id}`} className="td_none">
+                <figure className="coin_figure">
+                  <img className="coin_img" src={coin.icon} alt="" />
+                </figure>
+                <div className="home_coin_details">
+                  <ul className="coin_details_box">
+                    <li className="coin_details_item">
+                      Rank:
+                      {coin.rank}
+                    </li>
+                    <li className="coin_details_item">{coin.name}</li>
+                    <li className="coin_details_item">{coin.symbol}</li>
+                    <li className="coin_details_item">
+                      $
+                      {coin.price.toFixed(2)}
+                    </li>
+                    <button type="button" className="home_section3_btn">
+                      <Link to={`/details/${coin.id}`} className="td_none">Track</Link>
+                    </button>
+                  </ul>
+                </div>
+              </Link>
             </article>
           ))}
         </section>
