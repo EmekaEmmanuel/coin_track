@@ -111,6 +111,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a> 
 - **[Allows users to compare coins ...]**
+- **[Allows users to purchase coins ...]**
 >
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -129,7 +130,9 @@ Feel free to check the [issues page](https://github.com/EmekaEmmanuel/coin_track
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> we would like to thank Microverse team
+> I would like to thank Microverse team
+
+> I would like to Give credit to the author of the original design [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 

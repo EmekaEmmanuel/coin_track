@@ -4,6 +4,7 @@ import HomePage from './Pages/HomePage';
 import DetailsPage from './Pages/DetailsPage';
 import MarketPage from './Pages/MarketPage';
 import ChartPage from './Pages/ChartPage';
+import NotFound from './Components/NotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/details/:id" element={<DetailsPage />} />
           <Route path="/market/:id" element={<MarketPage />} />
           <Route path="/chart/:id" element={<ChartPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>

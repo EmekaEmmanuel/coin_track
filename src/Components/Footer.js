@@ -38,7 +38,7 @@ function Footer() {
         </article>
 
         <div className="footer_copyright">
-          &#169; 2022 monie track. All rights reserved.
+          &#169; 2022 glorch. All rights reserved.
         </div>
       </footer>
     </div>

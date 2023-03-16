@@ -6,6 +6,10 @@ import '../css/Details.css';
 function Details(props) {
   const { coin } = props;
 
+  const toMarket = () => {
+    window.location.href = `/market/${coin.id}`;
+  };
+
   return (
     <div className="app_container">
       <main className="main_tag">
@@ -24,7 +28,7 @@ function Details(props) {
 
         {coin
           && (
-            <section className="details_section2" key={coin.id}>
+            <section className="details_section2" key={coin.name}>
               <figure className="details_section2_figure">
                 <img src={coin.icon} alt="icon" />
               </figure>
@@ -92,10 +96,10 @@ function Details(props) {
                 <button className="details_chart_btn" type="button">
                   <Link to={`/chart/${coin.id}`} className="nav_font2 td_none">View Live chart </Link>
                 </button>
-
-                <button className="details_chart_btn" type="button">
+                <button onClick={toMarket} className="details_chart_btn" type="button">
                   <Link to={`/market/${coin.id}`} className="nav_font2 td_none">View Markets </Link>
                 </button>
+
               </div>
             </section>
           )}

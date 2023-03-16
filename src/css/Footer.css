@@ -17,18 +17,6 @@
   margin-top: 50px;
 }
 
-.home_footer figure {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  width: 90%;
-  margin: auto;
-}
-
-.home_footer figure img {
-  width: 20px;
-}
-
 .home_footer_article {
   padding: 30px;
   display: grid;
@@ -57,4 +45,16 @@
   width: 90%;
   margin: auto;
   color: #efefef9a;
+}
+
+@media only screen and (max-width: 425px) {
+  .home_footer_article {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  
 }

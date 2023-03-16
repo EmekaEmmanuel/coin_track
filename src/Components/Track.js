@@ -32,7 +32,7 @@ function Track(props) {
         <section className="home_section3">
 
           {filteredCoins.map((coin) => (
-            <article className="coin_article" key={coin.id}>
+            <article className="coin_article" key={coin.name}>
               <figure className="coin_figure">
                 <img className="coin_img" src={coin.icon} alt="" />
               </figure>

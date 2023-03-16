@@ -7,9 +7,14 @@ const initialState = {
   error: '',
 };
 
+export const testFetchMarkets = createAsyncThunk('market/fetchMarkets', async () => {
+  const { data } = await (axios.get('https://api.coinstats.app/public/v1/markets?coinId=bitcoin'));
+  return data.slice(0, 12);
+});
+
 export const fetchMarkets = createAsyncThunk('market/fetchMarkets', async (id) => {
   const { data } = await (axios.get(`https://api.coinstats.app/public/v1/markets?coinId=${id}`));
-  return data;
+  return data.slice(0, 12);
 });
 
 /* eslint-disable no-param-reassign */

@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Market.css';
 import { PropTypes } from 'prop-types';
 
-function Market(props) {
+function Markets(props) {
   const { myMarkets } = props;
 
   return (
@@ -27,7 +27,7 @@ function Market(props) {
               <ul className="market_article_box">
                 <li className="market_details_item">
                   Price:
-                  {coin.price.toFixed(2)}
+                  {coin.price}
                 </li>
                 <li className="market_details_item">
                   Exchange:
@@ -54,8 +54,8 @@ function Market(props) {
   );
 }
 
-Market.propTypes = {
+Markets.propTypes = {
   myMarkets: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.object)).isRequired,
 };
 
-export default Market;
+export default Markets;

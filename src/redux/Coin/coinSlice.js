@@ -11,7 +11,7 @@ const initialState = {
 
 export const fetchCoins = createAsyncThunk('coin/fetchCoins', async () => {
   const { data } = await (axios.get(getCoinsURL));
-  return data;
+  return data.slice(0, 50);
 });
 
 /* eslint-disable no-param-reassign */

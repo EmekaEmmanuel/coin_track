@@ -7,6 +7,11 @@ const initialState = {
   error: '',
 };
 
+export const testFetchCharts = createAsyncThunk('market/fetchMarkets', async () => {
+  const { data } = await (axios.get('https://api.coinstats.app/public/v1/charts?period=1m&coinId=bitcoin'));
+  return data;
+});
+
 export const fetchCharts = createAsyncThunk('market/fetchMarkets', async (id) => {
   const { data } = await (axios.get(`https://api.coinstats.app/public/v1/charts?period=1m&coinId=${id}`));
   return data;
