@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const getCoinsURL = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=5';
+const getCoinsURL = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=24';
 
 const initialState = {
   loading: false,

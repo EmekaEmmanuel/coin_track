@@ -6,7 +6,7 @@ import Nav from '../Components/Nav';
 import Track from '../Components/Track';
 
 function HomePage() {
-  const myCoins = (useSelector((state) => state.coin.coins)).slice(0, 50);
+  const myCoins = (useSelector((state) => state.coin.coins)).slice(0, 24);
   const dispatch = useDispatch();
 
   useEffect(() => {

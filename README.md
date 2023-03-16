@@ -2,6 +2,11 @@
 
 <div align="center">
 
+<img src="./src/img/home.png" alt="coin_image" width="140"  height="auto" >
+  <br/>
+<img src="./src/img/chart.png" alt="coin_image" width="140"  height="auto" >
+  <br/>
+
   <h3><b>Crypto Tracker project</b></h3>
 
 </div> 
@@ -54,7 +59,7 @@
 
 ## Project Presentation <a name="project-presentation"></a>
 
-- [Project Presentation video link](https://)  
+- [Project Presentation video link](https://www.loom.com/share/02d2fc8f2f6e4e28bb02beaa61a2e9a9)  
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
