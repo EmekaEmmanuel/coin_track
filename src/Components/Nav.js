@@ -15,7 +15,7 @@ function Nav() {
           <div className="logo_box">
             <figure>
               <Link to="/" className="mobile_disp nav_font2 td_none">
-                &#60;
+                <button className=" nav_font2 td_none" type="button">&#60;</button>
               </Link>
               <NavLink to="/" activeClassName="active" className="web_disp nav_font2 td_none">
                 {' '}

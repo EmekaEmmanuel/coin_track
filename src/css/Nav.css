@@ -131,6 +131,14 @@
     font-size: 20px;
   }
 
+  .logo_box figure button {
+    background-color: #000;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+  }
+
   .logo_box {
     display: flex;
     align-items: center;
