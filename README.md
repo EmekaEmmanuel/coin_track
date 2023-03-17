@@ -2,6 +2,11 @@
 
 <div align="center">
 
+<img src="./src/img/home.png" alt="coin_image" width="140"  height="auto" >
+  <br/>
+<img src="./src/img/chart.png" alt="coin_image" width="140"  height="auto" >
+  <br/>
+
   <h3><b>Crypto Tracker project</b></h3>
 
 </div> 
@@ -48,13 +53,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://visitspace.onrender.com/) 
+- [Live Demo Link](https://glorchcryp.onrender.com/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Presentation <a name="project-presentation"></a>
 
-- [Project Presentation video link](https://)  
+- [Project Presentation video link](https://www.loom.com/share/02d2fc8f2f6e4e28bb02beaa61a2e9a9)  
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -111,6 +116,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a> 
 - **[Allows users to compare coins ...]**
+- **[Allows users to purchase coins ...]**
 >
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -129,7 +135,9 @@ Feel free to check the [issues page](https://github.com/EmekaEmmanuel/coin_track
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> we would like to thank Microverse team
+> I would like to thank Microverse team
+
+> I would like to Give credit to the author of the original design [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
