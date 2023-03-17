@@ -9,7 +9,7 @@ describe('Coin redux state tests', () => {
   });
 
   it('fetches coin data from API', async () => {
-    const url = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=5';
+    const url = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=24';
     const axiosSpy = jest.spyOn(axios, 'get');
     jest.setTimeout(90000);
     const dispatchSpy = jest.fn();

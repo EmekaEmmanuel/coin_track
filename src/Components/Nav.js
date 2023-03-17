@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Nav.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import cryptoImage from '../img/crypto_image.png';
 import mic from '../img/mic_icon.png';
 import settingIcon from '../img/setting_icon.png';
@@ -14,7 +14,10 @@ function Nav() {
         <div className="home_header ">
           <div className="logo_box">
             <figure>
-              <NavLink to="/" activeClassName="active" className="nav_font2 td_none">
+              <Link to="/" className="mobile_disp nav_font2 td_none">
+                &#60;
+              </Link>
+              <NavLink to="/" activeClassName="active" className="web_disp nav_font2 td_none">
                 {' '}
                 <img className="logo_img" src={cryptoImage} alt="" />
                 {' '}
@@ -25,9 +28,9 @@ function Nav() {
           </div>
 
           <nav className="nav_tag">
-            <li className="disp_none active nav_item "><NavLink to="/" activeClassName="active" className="nav_font2 td_none">Track </NavLink></li>
-            <li className="disp_none active nav_item"><NavLink to="*" activeClassName="active" className="nav_font2 td_none">Happenings </NavLink></li>
-            <li className="disp_none active nav_item"><NavLink to="*" activeClassName="active" className="nav_font2 td_none">Personal </NavLink></li>
+            <li className="disp_none nav_item "><NavLink to="/" activeClassName="active" className="nav_font2 td_none">Track </NavLink></li>
+            <li className="disp_none nav_item"><NavLink to="*" activeClassName="active" className="nav_font2 td_none">Happenings </NavLink></li>
+            <li className="disp_none nav_item"><NavLink to="*" activeClassName="active" className="nav_font2 td_none">Personal </NavLink></li>
           </nav>
 
           <div className="notify_box">
